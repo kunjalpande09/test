@@ -1,0 +1,60 @@
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git config --global user.name "kunjalpande09"
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git config --global user.email kunjalpande6651@gmail.com
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git clone https://github.com/kunjalpande09/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git init test
+Reinitialized existing Git repository in C:/Users/DELL/Documents/test/.git/
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git add xyz.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents
+$ git init
+Initialized empty Git repository in C:/Users/DELL/Documents/.git/
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents (master)
+$ git add abc.txt
+fatal: pathspec 'abc.txt' did not match any files
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents (master)
+$ cd test
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
+$ git add abc.txt
+fatal: pathspec 'abc.txt' did not match any files
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/DELL/Documents/test/.git/
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
+$ git add *
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
+$ git commit -m "hello"
+[main (root-commit) aabde6e] hello
+ 1 file changed, 1 insertion(+)
+ create mode 100644 New Rich Text Document.rtf
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kunjalpande09/test.git
+ * [new branch]      main -> main
+
+DELL@DESKTOP-BNOMRM0 MINGW64 ~/Documents/test (main)
