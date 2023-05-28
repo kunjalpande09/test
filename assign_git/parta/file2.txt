@@ -1,0 +1,12 @@
+New file
+git --version
+
+make repo
+
+git init
+git add .
+git status
+git remote add origin "https://github.com/kunjalpande09/practice.git"
+git commit -m "first"
+git status
+git push -u origin master
