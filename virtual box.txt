@@ -1,0 +1,30 @@
+Install VirtualBox
+1.	sudo apt-get update
+2.	sudo apt-get install virtualbox
+3.	sudo apt-get install virtualbox—ext–pack
+
+
+drive suyash more
+https://drive.google.com/drive/u/0/folders/1me_nJJh0fvdDOXX3ew2jzGQpoP7f_iFt
+
+
+NAT network
+172.168.2.0/24
+
+VM1 (172.168.2.10)
+vagrant
+vagrant 
+ifconfig
+
+sudo apt install net-tools
+ping 172.168.2.11
+ls
+touch transfer.txt
+nano transfer.txt  (write in file, ctrl X Y enter)
+cat transfer.txt
+scp transfer.txt vagrant@172.168.2.11:/home/vagrant
+
+
+VM2 (172.168.2.11)
+ls /home
+ls /home/vagrant
