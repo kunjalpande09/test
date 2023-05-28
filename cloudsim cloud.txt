@@ -1,0 +1,48 @@
+java -version
+
+sudo apt install default-jdk
+
+gedit/etc/environment
+
+sudo update-alternatives --config java
+
+ant -version
+sudo apt install ant
+
+(cloudsim3.0.3 download zip from github)
+(koushal bhatt)
+(open vs code:sudo snap install --classic code
+1. example--power--Simulation.java
+2.sources--util--DatacenterBroker.java)
+
+
+
+cd Downloads
+cd cloudsim 3.0.3
+ls
+.code
+javac -classpath jars/cloudsim-3.0.3.jar: examples/org/cloudbus/cloudsim/examples/power/Simulation.java
+java -classpath jars/cloudsim-3.0.3.jar: examples/org/cloudbus/cloudsim/examples/power/Simulation.java
+
+
+
+
+
+
+CloudSim is a cloud computing simulation framework that allows researchers and developers to model and simulate various aspects of cloud environments. It provides a set of APIs and tools to create and manage virtualized cloud data centers, simulate workload and resource management policies, and evaluate the performance of different cloud computing algorithms.
+
+To simulate a cloud scenario using CloudSim, you would typically follow these steps:
+
+1. Set up the cloud environment: Define the characteristics of the cloud data center, such as the number of physical hosts, virtual machines, and data center network topology. You can specify parameters like processing power, memory, storage, and network bandwidth for each host.
+
+2. Create cloud applications: Define the workload for the cloud simulation by creating cloud applications. These applications consist of multiple tasks that need to be executed on virtual machines in the cloud data center. You can specify the resource requirements and execution times for each task.
+
+3. Develop scheduling algorithms: CloudSim provides several built-in scheduling algorithms for task allocation and resource management, such as First Come First Serve (FCFS), Round Robin (RR), and Priority-based scheduling. However, if you want to run a scheduling algorithm that is not present in CloudSim, you would need to develop your own custom algorithm.
+
+4. Implement the custom scheduling algorithm: Create your own Java class that extends the CloudSim core classes to implement your custom scheduling algorithm. This involves defining the logic for task allocation, VM selection, and resource management based on your algorithm's requirements.
+
+5. Integrate the custom algorithm into the simulation: Instantiate and configure the cloud data center, cloud applications, and other necessary components in CloudSim. Set the scheduling algorithm to your custom algorithm's class and run the simulation.
+
+6. Run the simulation: Start the simulation and observe the behavior of your custom scheduling algorithm in the simulated cloud environment. You can analyze various performance metrics, such as task completion time, resource utilization, and system throughput, to evaluate the effectiveness of your algorithm compared to other existing algorithms.
+
+By implementing a custom scheduling algorithm, you can experiment with novel approaches and evaluate their performance in a simulated cloud environment. This allows researchers and developers to test and validate new algorithms before deploying them in real cloud systems, potentially improving resource utilization, task scheduling efficiency, and overall system performance.
